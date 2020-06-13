@@ -1,0 +1,224 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+  color:slategray;
+  background-color: #cccccc;
+  background-image: url("https://i.imgur.com/uRG2o1N.jpg");
+  background-blend-mode: soft-light;
+}
+
+body p {
+  color: #111;
+  width: 60%;
+  text-align: justify;
+}
+
+h1,h2 {
+	font-weight: lighter;
+	font-size: "200%"
+}
+
+footer {
+  margin-top: 70px;
+  background-color: #111;
+	width: 70%;
+  margin: auto;
+}
+footer p{
+  width: 95%;
+  color: white;
+  text-align: right;
+  padding-top: 15px;
+  padding-bottom: 15px;
+	padding-right: 20px;
+}
+
+#container {
+  width: 70%;
+  margin: auto;
+}
+
+#containconsult {
+	width: 70%;
+	margin: auto;
+	color: black;
+}
+/* add your styles here */
+@media screen and (max-width : 768px)
+{
+  #container {
+    width: 90%;
+		margin: auto;
+  }
+	h1 {
+		font-size: 250%
+	}
+	#containconsult {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+ul {
+  padding-left: 0%;
+  overflow: hidden;
+  background-color: #333;
+	display: table;
+	margin: auto;
+}
+
+li {
+  display: block;
+	float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+	text-align: center;
+}
+
+
+li a:hover {
+  background-color: #4CAF50;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+th, td {
+  padding: 15px;;
+}
+
+td {
+	
+	border: 2px solid black;
+}
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4CAF50;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+#myImg {
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(1)} 
+  to {-webkit-transform:scale(2)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
