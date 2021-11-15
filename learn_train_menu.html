@@ -9,7 +9,7 @@
   <body>
 		<div id="container">
 			<header>
-				<h1 style=font-size:400%><pre><center><img src="https://i.imgur.com/WU8z24q.jpg" alt="logo" hight="80px" width="80px"> The Nature of Cats <img src="https://i.imgur.com/WU8z24q.jpg" alt="logo" hight="80px" width="80px"></center></pre></h1>
+				<h1 style=font-size:400%><center><img src="https://i.imgur.com/WU8z24q.jpg" width="80"> The Nature of Cats <img src="https://i.imgur.com/WU8z24q.jpg" width="80"></center></h1>
 				<h4><center>Barbara Gearge Cat Behaviourist - <em>
 				To contact Barbara, please email&nbsp;<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=barbara@ttouch.co.za" target="_blank" rel="noopener">barbara@ttouch.co.za</a>
 				</em></center></h4>
@@ -56,15 +56,35 @@
 				<h1 style="font-size:350%;"><u><strong><center>Learning and Training</center></strong></u></h1>
                 <br><br><br><br>
 
-                <div style="color:black;font-size:115%;font-family:courier;line-height:0.4;">
-                    <p onclick="article_num(1)"><strong>Early Learning for KIttens</strong></p>	
+                <div class="articleTitle">
+					<p class="article" onclick="show(1)"><strong><i id="ar1" class="arrow right"></i><a class="article" href="#1"> Early Learning for KIttens</strong></a></p>
+					<div id="1" class="lineHight" style = "display: none;">
+						<center>
+							<h1 style="font-size:300%;" ><strong><u>Early Learning for Kittens</u></strong></h1><br>
+							<img width="700" alt="cat Paddy snooze" src="https://i.imgur.com/uJ4mXU1.jpg"><br><br>
+							<p>Cats learn throughout their lives, adapting to their physical abilities and environment. The basic foundation for their behaviour and outlook on life happens during the first months of life.</p>
+							<p>There are two phases of learning, socialisation and behaviour; these overlap both in time and lessons. All early learning is dependent on the genetic makeup of the parents and the environment in which the kittens are exposed to in the early months.</p>
+							<p>Socialisation is learning to live in the world they are born into, and in which they will live most of their lives. Behaviour and personality begin during the socialisation period and continue as the kitten gains physical and mental ability.</p>
+							<p>In an ideal world, kittens would stay with their mother and siblings until 12 weeks old, with the necessary amount of socialisation and stimulation; sadly this is not possible for most kittens in rescue centres where there are limited funds, resources, volunteers, foster homes and space, a continual influx of new kittens needing help, and often no mother cat with the kittens.</p>
+							<p>The socialisation phase is between 2 and 7 weeks of age, and is strongly influenced by the father’s personality. During this time kittens learn about their environment; what is safe and normal, what to avoid, and how to use the litter tray. They are introduced to people, including children, and other animals and start to form relationships.</p>
+							<p>The behaviour phase between 7 and 12 weeks is more influenced by the mother, both genetically and personally, as she teaches her kittens how to be cats. The kittens learn bite and claw inhibition, communication and dealing with other cats, grooming, playing and hunting skills, dealing with stress and adversity and not always getting their own way.</p>
+							<p>Lack of these learnings can be seen in the behaviour of kittens and cats: hiding, not forming a bond with owners, fear or aggressive behaviour including spraying and fighting, non-acceptance of other cats, biting and scratching and a resistance to learning.</p>
+						</center>
+					</div>
                 </div>
 
                 <script>
-                    function article_num(art_num){
-                      localStorage.setItem("article", art_num);
-                      window.open("learn_train_articles.html", "_self");
-                    }
+                    function show(art_num) {
+
+					if (document.getElementById(art_num).style.display == "none") {
+						document.getElementById(art_num).style.display = "block";
+						document.getElementById("ar"+art_num).className = "arrow down";
+					} else {
+						document.getElementById(art_num).style.display = "none";
+						document.getElementById("ar"+art_num).className = "arrow right";
+					}
+
+				}
                 </script>
             
 			</body>
