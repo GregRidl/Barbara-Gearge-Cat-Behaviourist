@@ -2,15 +2,26 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
   color:slategray;
   background-color: #cccccc;
-  background-image: url("https://i.imgur.com/uRG2o1N.jpg");
   background-blend-mode: soft-light;
 }
+
+body::after {
+  content: "";
+  background: url(https://i.imgur.com/uRG2o1N.jpg);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;   
+}
+
 
 .articleTitle {
   color:black;
   font-size:115%;
-  font-family:
-  courier;
+  font-family: courier;
   line-height:0.4;
 }
 
@@ -43,6 +54,7 @@ footer {
   background-color: #111;
 	width: 70%;
   margin: auto;
+  border-radius: 8px;
 }
 footer p{
   width: 95%;
@@ -55,12 +67,12 @@ footer p{
 
 #container {
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #containconsult {
 	width: 70%;
-	margin: auto;
+	margin: 0 auto;
 	color: black;
 }
 
@@ -139,7 +151,6 @@ th, td {
 }
 
 td {
-	
 	border: 2px solid black;
 }
 
@@ -189,58 +200,6 @@ li.dropdown {
   display: block;
 }
 
-
-
-#myImg {
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(1)} 
   to {-webkit-transform:scale(2)}
@@ -255,7 +214,7 @@ li.dropdown {
 .close {
   position: absolute;
   top: 15px;
-  right: 35px;
+  right: 25%;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -306,3 +265,127 @@ li.dropdown {
 		margin: auto;
 	}
 } */
+
+.pg42 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pg42:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /*sit on top */
+  padding-top: 2.5%;
+  padding-left: 32%;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /*fall back colour*/
+  background-color: rgba(0,0,0,0.9); /*blakc with opacity */
+}
+
+.modal-content {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: left;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+input {
+  
+  padding: 10px 5px 12px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width:600px;
+  }
+
+input:focus {
+  border: 2px solid green;
+}
+
+label {
+                
+  position: relative;
+  top:12px;
+  width:180px;
+  float: left;
+  font-size: 20px;
+}
+
+.inHight {
+  height: 300px;
+}
+
+.form-element {
+  margin-bottom: 8px;
+}
+
+form div {
+  position: relative;
+}
+
+form div i {
+  position: absolute;
+  padding-top: 15px;
+  padding-left: 6px;
+}
+
+.success-icon, .failure-icon {
+  right: 115px;
+  opacity: 0;
+} 
+
+.failure-icon {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  color: red;
+  padding-left: 220px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 15px;
+  margin-left: 180px;
+  margin-bottom: 20px;
+  width: 638px;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
