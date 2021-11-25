@@ -293,69 +293,23 @@ li.dropdown {
     color:green;
   }
 
-  .cols-2 .column-1,
-  .cols-2 .column-2,
-  .cols-3 .column-1,
-  .cols-3 .column-2,
-  .cols-3 .column-3,
-  .demo-typo-col2,
-  .demo-typo-col3,
-  .demo-typo-col4 {width: 100%; };
-
-  #gkSidebar { width: 35%; }
-
-  #gkContentWrap { width: 65%; }
-
-  .gkPage { max-width: 1200px; } 
-
 }
 
 @media screen and (max-width: 500px) {
   #container {
     width: 100%;
-    margin: 0 auto;
     padding: 0;
   }
 
-  body {
-    margin: 0 auto;
-    background-color: transparent;
-  }
-
   #containconsult {
-    position: relative;
     width: 100%;
-    margin: 0 auto;
   }
 
   #bookDetails {
     width: 100%;
-    text-align: justify;
-    margin: 0 auto;
-    padding: 0;
   }
 
 }
-
-/*@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-@media screen and (max-width : 768px)
-{
-  #container {
-    width: 90%;
-		margin: auto;
-  }
-	h1 {
-		font-size: 250%
-	}
-	#containconsult {
-		width: 90%;
-		margin: auto;
-	}
-} */
 
 .pg42 {
   border-radius: 5px;
