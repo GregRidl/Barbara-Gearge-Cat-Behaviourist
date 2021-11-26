@@ -293,6 +293,7 @@ li.dropdown {
     color:green;
   }
 
+
 }
 
 @media screen and (max-width: 500px) {
@@ -445,4 +446,10 @@ button:hover {
 
 .bookMedia {
   color:black;
+}
+
+body div header pre {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
